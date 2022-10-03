@@ -2,15 +2,15 @@ const { QueryCommand, ScanCommand } = require("@aws-sdk/client-dynamodb");
 const express = require("express");
 const { dbClient } = require("../dynamodb/client");
 const router = express.Router();
-const { marshall, unmarshall } = require("@aws-sdk/util-dynamodb");
+// const { marshall, unmarshall } = require("@aws-sdk/util-dynamodb");
 
 const rootHandler = async (req, res) => {
     try {
       const users = await queryUsers();
-      res.send(users);
-      console.log("users are: ", JSON.stringify(users));
+      users ? res.send(users) : res.status(500).send("server failed to response");
+      console.log("fetched users are: ", JSON.stringify(users));
     } catch (error) {
-      res.send(error);
+      res.status(500).send( JSON.stringify(error));
       console.log("error occured!!: ", error);
     }
   };
