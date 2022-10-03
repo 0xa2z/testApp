@@ -1,0 +1,68 @@
+[
+  {
+  "username": {
+    "S": "groot007"
+  },
+  "name": {
+    "S": "groot"
+  },
+  "password": {
+    "S": "iamgroot"
+  }
+},
+{
+    "username": {
+      "S": "groot008"
+    },
+    "name": {
+      "S": "groot"
+    },
+    "password": {
+      "S": "iamgroot"
+    }
+  },
+  {
+    "username": {
+      "S": "groot009"
+    },
+    "name": {
+      "S": "groot"
+    },
+    "password": {
+      "S": "iamgroot"
+    }
+  },
+  {
+    "username": {
+      "S": "groot010"
+    },
+    "name": {
+      "S": "groot"
+    },
+    "password": {
+      "S": "iamgroot"
+    }
+  },
+  {
+    "username": {
+      "S": "groot011"
+    },
+    "name": {
+      "S": "groot"
+    },
+    "password": {
+      "S": "iamgroot"
+    }
+  },
+  {
+    "username": {
+      "S": "groot012"
+    },
+    "name": {
+      "S": "groot"
+    },
+    "password": {
+      "S": "iamgroot"
+    }
+  }
+]

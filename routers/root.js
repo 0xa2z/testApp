@@ -33,7 +33,7 @@ router.get("/", rootHandler);
 router.get("/users", usersHandler);
 
 const queryUsers = async () => {
-  const TableName = "UserTable";
+  const TableName = "userdb";
   const command = new ScanCommand({
     TableName,
     Limit: 10,
