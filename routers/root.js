@@ -5,15 +5,15 @@ const router = express.Router();
 // const { marshall, unmarshall } = require("@aws-sdk/util-dynamodb");
 
 const rootDocs = `
-user following routes to work with api
+user following routes to work with api\n
 
-type	  route	      description	                    format
+  type	  route	      description	                    format \n
 			
-get	    /users	    get all the users in dynamodb	
-put	    /signUp	    login request	                  {'username':string, 'password':string}
-post	  /login	    sign up request	                {'username':string, 'password':string, 'name':string}
-patch	  /updateUser	update user request	            {'username':string, 'password':string, 'name':string}
-delete	/deleteUser	delete user	                    {'username':string}
+\nget	    /users	    get all the users in dynamodb	
+\nput	    /signUp	    login request	                  {'username':string, 'password':string}
+\npost	  /login	    sign up request	                {'username':string, 'password':string, 'name':string}
+\npatch	  /updateUser	update user request	            {'username':string, 'password':string, 'name':string}
+\ndelete	/deleteUser	delete user	                    {'username':string}
 `;
 const rootHandler = (req, res) => {
   res.send(rootDocs);
